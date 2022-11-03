@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-image: url('/img/img4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #164e63;
+}
+
+.menu {
+  border-top: 5px solid #67e8f9;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+.logo-name {
+  width: 141.15px;
+  height: 50px;
+}
+
+.slideshow-wrapper {
+  width: 300%;
+  /* Change the animation settings */
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+
+  11% {
+    left: 0;
+  }
+
+  22.5% {
+    left: -100%;
+  }
+
+  38% {
+    left: -100%;
+  }
+
+  45% {
+    left: -200%;
+  }
+
+  56% {
+    left: -200%;
+  }
+
+  67% {
+    left: -100%;
+  }
+
+  78% {
+    left: -100%;
+  }
+
+  89% {
+    left: 0%;
+  }
+}
+
+
+.card {
+  width: 300px;
+  height: 300px;
+}
+
+.card-header {
+  height: 108px;
+}
+
+li a {
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: 200ms all;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+li a:hover {
+  color: #cffafe;
+  background-color: #0e7490;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid #cffafe;
+  border-left: 2px solid #cffafe;
+  border-right: 2px solid #cffafe;
+  border-radius: 15px;
+  transition: 300ms all;
+}
+
+.active {
+  color: #a5f3fc;
+  background-color: #0891b2;
+  border-bottom: 1px solid #0e7490;
+  border-left: 1px solid #0e7490;
+  border-right: 1px solid #0e7490;
+
+}
+
+.logo-name a:hover span:hover {
+  color: #164e63;
+  transition: 300ms all;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 900px;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.srv-validation-message {
+  color: red;
+}
+
+.fadeInDown {
+  animation: fadeIn 500ms ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
