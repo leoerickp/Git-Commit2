@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="columns-2 p-0 logo-name">
                 <Link to="/" >
                     <img src={logo} alt="logo" className="logo" />
-                    <span className="text-cyan-100 drop-shadow-md font-bold">HitHub Commits</span>
+                    <span className="text-cyan-100 drop-shadow-md font-bold">GitHub Commits</span>
                 </Link>
             </div>
             <div className="flex flex-row p-0">
